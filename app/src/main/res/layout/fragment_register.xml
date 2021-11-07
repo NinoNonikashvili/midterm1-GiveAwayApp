@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightOrange"
+    android:backgroundTint="@color/lightOrange"
+    tools:context=".fragments.RegisterFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/blue_text"
+        app:hintTextColor="@color/blue_text"
+        app:boxBackgroundColor="@color/lightOrange"
+        app:boxStrokeColor="@color/focus"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightOrange"
+            android:hint="@string/Username"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/blue_text"
+
+            android:textCursorDrawable="@color/blue_text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/blue_text"
+        app:boxStrokeColor="@color/focus"
+        app:boxBackgroundColor="@color/lightOrange"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/blue_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        tools:layout_editor_absoluteX="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightOrange"
+            android:hint="@string/Email"
+            android:inputType="text"
+            android:textColor="@color/blue_text"
+            android:textCursorDrawable="@color/blue_text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/blue_text"
+        app:errorEnabled="true"
+        app:boxStrokeColor="@color/focus"
+        app:boxBackgroundColor="@color/lightOrange"
+        app:hintTextColor="@color/blue_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        tools:layout_editor_absoluteX="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightOrange"
+            android:hint="@string/Adress"
+            android:inputType="text"
+            android:textColor="@color/blue_text"
+            android:textCursorDrawable="@color/blue_text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/blue_text"
+        app:boxStrokeColor="@color/focus"
+        app:boxBackgroundColor="@color/lightOrange"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/blue_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+        tools:layout_editor_absoluteX="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightOrange"
+            android:hint="@string/phoneNumber"
+            android:inputType="phone"
+            android:textColor="@color/blue_text"
+            android:textCursorDrawable="@color/blue_text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/blue_text"
+        app:boxStrokeColor="@color/focus"
+        app:errorEnabled="true"
+        app:boxBackgroundColor="@color/lightOrange"
+        app:hintTextColor="@color/blue_text"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/blue_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+        tools:layout_editor_absoluteX="30dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightOrange"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:textColor="@color/blue_text"
+            android:textCursorDrawable="@color/blue_text"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/blue_text"
+        app:boxStrokeColor="@color/focus"
+        app:boxBackgroundColor="@color/lightOrange"
+        app:errorEnabled="true"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/blue_text"
+        app:hintTextColor="@color/blue_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/MB_registered"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+        tools:layout_editor_absoluteX="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightOrange"
+            android:hint="@string/ConfirmPassword"
+            android:inputType="textPassword"
+            android:textColor="@color/blue_text"
+            android:textCursorDrawable="@color/blue_text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/MB_registered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_rounded"
+        android:text="@string/Register"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

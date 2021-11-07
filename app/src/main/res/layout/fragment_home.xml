@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightOrange"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/LL_logoWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/IV_logo"
+            android:layout_width="58dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/lightOrange"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_giveawaylogo" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/TV_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/marck_script"
+            android:text="@string/giveAway"
+
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            android:textColor="@color/blue_text" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/blue_text"
+        app:boxBackgroundColor="@color/lightOrange"
+        app:boxStrokeColor="@color/focus"
+        app:hintTextColor="@color/blue_text"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LL_logoWrapper">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/blue_text"
+            android:textCursorDrawable="@color/blue_text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColorHint="@color/blue_text"
+        app:boxBackgroundColor="@color/lightOrange"
+        app:boxStrokeColor="@color/focus"
+        app:hintTextColor="@color/blue_text"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/MB_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/blue_text"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightOrange"
+            android:backgroundTint="@color/lightOrange"
+            android:drawableTint="@color/lightOrange"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:textColor="@color/blue_text"
+            android:textCursorDrawable="@color/blue_text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/MB_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_rounded"
+        android:text="@string/Login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/TV_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/TV_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        android:text="@string/CreateAccount"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:backgroundTint="@null"
+        android:textColor="@color/blue_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/MB_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
